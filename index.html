@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=0">
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+    </script>
+	<title>Flexbox DeOliveiraDev</title>
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+	<style type="text/css">
+		#banner {
+			display: flex;
+			justify-content: center;
+			background-image: url("assets/images/hotel_teste.jpg");
+			height: 670px;
+			width: 100%;
+			background-position: center;
+			background-size: cover;
+        } 
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div class="logo"> <!-- Logo -->
+				<img src="assets/images/Logo1.png" alt="Logo">
+            </div>
+            <div class="menu"> <!-- MENU -->
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div> <!-- Esse mm_line é responsável pelos três traços do menu mobile, por isso tem 3 deles. -->
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul> <!-- Menu PC -->
+                        <li><a href="###" class="active">HOME</a></li> 
+                        <li><a href="###">ROOMS</a></li>
+                        <li><a href="###">GALERY</a></li>
+                        <li><a href="###">RESERVATIONS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Banner (Imagem c/ mensagem e botão) -->
+    <section id="banner">
+        <div class="container" class="column">
+            <div class="banner-texto">
+                <h1>Atendimento de Padrão Internacional com muita diversão e lazer!</h1>
+                <a href="###" class="botao">RESERVAR AGORA</a>
+            </div>
+        </div>
+    </section>
+    <!-- Conteúdo -->
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">WOOD ISLAND NEWS</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body flex">
+                        <article>
+                            <a href="###">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 28 MAI 21</div>
+                                    <div class="news_comments">2</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/images/foto_conteudo.jpeg" alt="foto_conteúdo">
+                                </div>
+                                <div class="news_title">
+                                    <h1>Lorem ipsum dolor sit amat velum</h1>
+                                </div>
+                                <div class="news_resume">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="###">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 23 MAI 21</div>
+                                    <div class="news_comments">14</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/images/foto_conteudo.jpeg" alt="foto_conteúdo">
+                                </div>
+                                <div class="news_title">
+                                    <h1>Lorem ipsum dolor sit amat velum</h1>
+                                </div>
+                                <div class="news_resume">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="###">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 16 MAI 21</div>
+                                    <div class="news_comments">11</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/images/foto_conteudo.jpeg" alt="foto_conteúdo">
+                                </div>
+                                <div class="news_title">
+                                    <h1>Lorem ipsum dolor sit amat velum</h1>
+                                </div>
+                                <div class="news_resume">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article>
+                            <a href="###">
+                                <div class="news_data">
+                                    <div class="news_posted_at"> 11 MAI 21</div>
+                                    <div class="news_comments">23</div>
+                                </div>
+                                <div class="news_thumbnail">
+                                    <img src="assets/images/foto_conteudo.jpeg" alt="foto_conteúdo">
+                                </div>
+                                <div class="news_title">
+                                    <h1>Lorem ipsum dolor sit amat velum</h1>
+                                </div>
+                                <div class="news_resume">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>   
+            </section>
+            <aside>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">ACOMODAÇÕES</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                        <article>
+                            <div class="two_box_in_line">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>   
+                            </div>                             
+                        </article>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">SOBRE NÓS</div>
+                        <div class="widget_title_bar"></div>
+                    </div>
+                    <div class="widget_body">
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                    </div>
+                </div>                    
+            </aside>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container flexColumn">
+            <div class="footer_menu">
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">CONTATO</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <p>Telefone: (99) 90000-0000</p>
+                            <p>E-mail: contact@woodisland.com</p>
+                            <p>Endereço: Rua Reino Perdido de Atlanta Nº X</p>
+                        </div>
+                    </div>   
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">NOS SIGA NAS REDES SOCIAIS</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <p>Facebook: Wood Island Hotel</p>
+                            <p>Instagram: @WoodIsland</p>
+                            <p>Twitter: @WoodIsland</p>
+                        </div>
+                    </div>                       
+                </div>
+                <div class="footer_areaitem">
+                    <div class="widget">
+                        <div class="widget_title">
+                            <div class="widget_title_text">TRABALHE CONOSCO</div>
+                            <div class="widget_title_bar"></div>
+                        </div>
+                        <div class="widget_body">
+                            <P>Envie seu curriculo para: </P>
+                            <p>rh@woodisland.com</p>
+                            <p>Quer saber mais sobre as nossas vagas?</p>
+                            <a href="###">Clique Aqui!</a>
+                        </div>
+                    </div>                       
+                </div>                
+            </div>
+            <div class="footer_copy">
+                Copyright - Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

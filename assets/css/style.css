@@ -1,0 +1,328 @@
+body {
+    margin: 0px;
+    margin-top: 5px;
+    padding: 0px;
+    font-family: 'Anaheim', sans-serif;
+}
+
+/* BARRA DE MENUS E LOGO */
+header {
+    display: flex;
+    height: 120px;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 990px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 188px;
+    width: 330px;
+    image-rendering: optimizeQuality;
+    filter: drop-shadow(1px 1px 5px #aaaaaa);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul, nav li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(41, 23, 1);
+    font-size: 25px;
+}
+
+.active, nav a:hover {
+    background-color: rgb(41, 23, 1);
+    color: white;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mm_line {
+    height: 2px;
+    background-color: rgb(41, 23, 1);
+}
+
+/* BANNER */
+
+.column {
+    flex-direction: column;
+}
+
+.banner-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 3px 3px 5px rgb(41, 23, 1);
+    font-size: 35px;
+    max-width: 500px;
+}
+
+
+.botao {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    height: 75px;
+    width: 125px;
+    text-align: center;
+    align-self: center;
+    border: 1px solid white;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(41, 23, 1, 0.788);
+}
+
+.botao:hover {
+    color: rgb(226, 169, 99);
+    border: 1px solid rgb(226, 169, 99);
+}
+
+/* CONTEÚDO */
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget_body {
+    text-align: justify;
+}
+
+.widget_body h1{
+    text-align: initial;
+}
+
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text {
+    color: rgb(41, 23, 1);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.widget_title_bar {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(226, 169, 99);
+    margin-top: 5px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+    color: black;
+}
+
+article .news_data {
+    display: flex;
+}
+
+article .news_posted_at {
+    background-color: rgb(41, 23, 1);
+    color: white;
+    padding: 10px;
+}
+
+article .news_comments {
+    background-color: rgb(226, 169, 99);
+    color: white;
+    padding: 10px;
+    width: 15px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+article .news_thumbnail {
+    margin-top: 30px;
+}
+article .news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+article .news_title h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: rgb(41, 23, 1);
+    font-size: 23px;
+}
+
+.widget_body {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+article .news_resume {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+article .two_box_in_line {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+article .two_box_in_line .box {
+    flex: 1;
+    background-color: rgba(41, 23, 1, 0.719);
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    min-width: 100px;
+}
+
+/* RODAPÉ */
+
+footer {
+    color: white;
+    background-color: rgb(41, 23, 1);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.footer_menu {
+    display: flex;
+    flex: 1;
+}
+
+.footer_areaitem {
+    flex: 1;
+}
+
+footer .widget_title_text {
+    color: white;
+}
+
+footer .widget_body a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+footer .widget_body a:hover {
+    color: rgb(226, 169, 99);
+    border: 1px solid rgb(226,169,99);
+}
+
+.footer_copy {
+    border-top: 1px solid rgb(226,169,99);
+    height: 40px;
+    line-height: 40px;
+    color: #555555;
+    margin-top: 35px;
+}
+
+
+/* Responsividade */
+@media (max-width: 770px) {
+
+    .banner-texto {
+        font-size: 30px;
+    }
+
+    .container .botao {
+        justify-content: right;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    #geral section, #geral aside, .footer_menu {
+        padding: 20px;
+    }
+
+    .footer_menu {
+       flex-direction: column;
+   }
+    .footer_copy {
+        padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;        
+    }
+    
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 5px;
+    }
+
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

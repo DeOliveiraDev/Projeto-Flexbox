@@ -1,0 +1,1 @@
+Neste projeto da B7Web busquei desenvolver uma página inicial de um Hotel, utilizando principalmente o flexbox, com conteúdo responsivo, a parte do Menu Mobile inclui um pouco de JavaScript.
